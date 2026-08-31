@@ -12,6 +12,18 @@ export const salonConfig = {
   logo: "/logo.svg", // Placeholder for actual logo
   heroImage: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop", // Remote premium beauty image for development
 
+  theme: {
+    primary: "#B76E79",
+    primaryDark: "#8E3A4A",
+    secondary: "#F5E6E8",
+    background: "#FFF9FA",
+    surface: "#FFFFFF",
+    text: "#262020",
+    mutedText: "#6F6264",
+    dark: "#24191B",
+    border: "#EADBDD"
+  },
+
   aboutTitle: "Beauty Is Personal.",
   aboutDescription: "Welcome to Velora Beauty Studio, where your personal style and beauty take center stage.",
   aboutStory: "Founded with a passion for excellence, our studio is dedicated to providing a luxurious, relaxing, and personalized experience. Our team of expert stylists and beauty professionals are here to understand your unique needs and deliver results that speak for themselves. We believe that true beauty comes from confidence, and our goal is to make every client feel their absolute best.",

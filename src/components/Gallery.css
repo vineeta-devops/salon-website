@@ -1,5 +1,5 @@
 .gallery-section {
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-surface);
 }
 
 .gallery-header {
@@ -63,7 +63,7 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background-color: var(--color-bg-main);
+  background-color: var(--color-background);
   aspect-ratio: 1 / 1;
 }
 

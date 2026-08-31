@@ -1,5 +1,5 @@
 .why-choose-us-section {
-  background-color: var(--color-bg-main);
+  background-color: var(--color-background);
 }
 
 .wcu-layout {
@@ -26,7 +26,7 @@
 }
 
 .wcu-description {
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   font-size: 1.1rem;
   margin-bottom: var(--space-md);
 }
@@ -45,7 +45,7 @@
 
 .wcu-feature {
   padding: var(--space-md);
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 4px;
 }
@@ -60,11 +60,11 @@
 .wcu-feature-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-dark);
   margin-bottom: var(--space-xs);
 }
 
 .wcu-feature-desc {
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   font-size: 0.95rem;
 }

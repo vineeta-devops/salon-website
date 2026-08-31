@@ -1,5 +1,5 @@
 .contact-section {
-  background-color: var(--color-bg-main);
+  background-color: var(--color-background);
 }
 
 .contact-layout {
@@ -22,12 +22,12 @@
 
 .contact-title {
   margin-bottom: var(--space-sm);
-  color: var(--color-secondary);
+  color: var(--color-dark);
 }
 
 .contact-description {
   font-size: 1.1rem;
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   margin-bottom: var(--space-lg);
 }
 
@@ -54,7 +54,7 @@
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-dark);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -67,7 +67,7 @@
 }
 
 .contact-item-text {
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   font-size: 1rem;
   line-height: 1.5;
   font-style: normal;
@@ -85,12 +85,12 @@
 }
 
 .contact-link:hover, .contact-link:focus {
-  color: var(--color-secondary);
+  color: var(--color-dark);
   outline: none;
 }
 
 .contact-map-placeholder {
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 8px;
   display: flex;
@@ -113,7 +113,7 @@
 .contact-map-address {
   font-family: var(--font-heading);
   font-size: 1.25rem;
-  color: var(--color-secondary);
+  color: var(--color-dark);
   margin-bottom: var(--space-md);
   max-width: 80%;
 }

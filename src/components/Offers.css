@@ -1,5 +1,5 @@
 .offers-section {
-  background-color: var(--color-bg-main); /* or bg-accent for contrast */
+  background-color: var(--color-background); /* or bg-accent for contrast */
 }
 
 .offers-header {
@@ -21,7 +21,7 @@
 }
 
 .offer-card {
-  background: var(--color-bg-alt);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 4px;
   overflow: hidden;
@@ -38,7 +38,7 @@
 .offer-image-wrapper {
   position: relative;
   padding-top: 60%;
-  background-color: var(--color-bg-main);
+  background-color: var(--color-background);
   overflow: hidden;
 }
 
@@ -53,7 +53,7 @@
   position: absolute;
   top: 1rem; right: 1rem;
   background-color: var(--color-primary);
-  color: var(--color-text-main);
+  color: var(--color-text-light);
   padding: 0.35rem 0.85rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -73,12 +73,12 @@
 .offer-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  color: var(--color-secondary);
+  color: var(--color-dark);
   margin-bottom: var(--space-xs);
 }
 
 .offer-description {
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   font-size: 1rem;
   margin-bottom: var(--space-md);
   flex-grow: 1;
@@ -94,18 +94,18 @@
 .offer-price {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-dark);
 }
 
 .offer-original-price {
   text-decoration: line-through;
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   font-size: 0.95rem;
 }
 
 .offer-validity {
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   font-style: italic;
   margin-bottom: var(--space-md);
 }

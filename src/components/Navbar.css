@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(253, 251, 249, 0.95); /* matching --color-bg-main with opacity */
+  background-color: rgba(253, 251, 249, 0.95); /* matching --color-background with opacity */
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-border);
   transition: all var(--transition-fast);
@@ -19,7 +19,7 @@
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-dark);
   text-decoration: none;
 }
 
@@ -38,7 +38,7 @@
 .nav-link {
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--color-text-main);
+  color: var(--color-text);
   position: relative;
 }
 
@@ -49,7 +49,7 @@
   height: 1px;
   bottom: -4px;
   left: 0;
-  background-color: var(--color-secondary);
+  background-color: var(--color-dark);
   transition: width var(--transition-fast);
 }
 
@@ -89,7 +89,7 @@
 .hamburger-line {
   width: 100%;
   height: 2px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-dark);
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
@@ -112,7 +112,7 @@
   left: 0;
   width: 100%;
   height: calc(100vh - 80px);
-  background-color: var(--color-bg-main);
+  background-color: var(--color-background);
   padding: var(--space-lg) var(--space-md);
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@
 .mobile-nav-link {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  color: var(--color-secondary);
+  color: var(--color-dark);
 }
 
 .mobile-menu-cta {

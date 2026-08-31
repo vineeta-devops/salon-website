@@ -1,5 +1,5 @@
 .appointment-section {
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-surface);
 }
 
 .appointment-layout {
@@ -21,12 +21,12 @@
 
 .appointment-title {
   margin-bottom: var(--space-sm);
-  color: var(--color-secondary);
+  color: var(--color-dark);
 }
 
 .appointment-description {
   font-size: 1.1rem;
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   margin-bottom: var(--space-lg);
 }
 
@@ -55,16 +55,16 @@
   font-family: var(--font-heading);
   font-size: 1.05rem;
   margin-bottom: 0.25rem;
-  color: var(--color-secondary);
+  color: var(--color-dark);
 }
 
 .trust-text p {
   font-size: 0.9rem;
-  color: var(--color-text-muted);
+  color: var(--color-muted);
 }
 
 .appointment-form-wrapper {
-  background-color: var(--color-bg-main);
+  background-color: var(--color-background);
   padding: var(--space-lg);
   border-radius: 8px;
   box-shadow: var(--shadow-md);
@@ -100,7 +100,7 @@
 .form-label {
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--color-text-main);
+  color: var(--color-text);
 }
 
 .form-required {
@@ -114,8 +114,8 @@
   padding: 0.75rem 1rem;
   border: 1px solid var(--color-border);
   border-radius: 4px;
-  background-color: var(--color-bg-main);
-  color: var(--color-text-main);
+  background-color: var(--color-background);
+  color: var(--color-text);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
   width: 100%;
 }
@@ -147,7 +147,7 @@ textarea.form-control {
 .form-submit-note {
   text-align: center;
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: var(--color-muted);
 }
 
 .form-success {

@@ -27,7 +27,7 @@
 
 .hero-title {
   margin-bottom: var(--space-sm);
-  color: var(--color-secondary);
+  color: var(--color-dark);
 }
 
 .hero-title span {
@@ -36,7 +36,7 @@
 
 .hero-description {
   font-size: 1.1rem;
-  color: var(--color-text-muted);
+  color: var(--color-muted);
   margin-bottom: var(--space-md);
   max-width: 480px;
 }
