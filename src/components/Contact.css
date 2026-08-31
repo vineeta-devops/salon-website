@@ -1,0 +1,119 @@
+.contact-section {
+  background-color: var(--color-bg-main);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  margin-bottom: var(--space-sm);
+  color: var(--color-secondary);
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 600px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.contact-item-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-item-icon {
+  color: var(--color-primary-dark);
+  width: 20px;
+  height: 20px;
+}
+
+.contact-item-text {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.contact-link {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color var(--transition-fast);
+  margin-top: 0.25rem;
+}
+
+.contact-link:hover, .contact-link:focus {
+  color: var(--color-secondary);
+  outline: none;
+}
+
+.contact-map-placeholder {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-xl);
+  min-height: 300px;
+  height: 100%;
+}
+
+.contact-map-icon {
+  color: var(--color-primary);
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--space-md);
+}
+
+.contact-map-address {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-md);
+  max-width: 80%;
+}

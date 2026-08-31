@@ -1,0 +1,107 @@
+.footer {
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+  padding: var(--space-xl) 0 var(--space-md);
+  margin-bottom: 70px;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    margin-bottom: 0;
+  }
+}
+
+.footer-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .footer-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-layout {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+.footer-brand h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+.footer-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  display: inline-block;
+  width: fit-content;
+}
+
+.footer-link:hover, .footer-link:focus {
+  color: var(--color-primary);
+  outline: none;
+}
+
+.footer-contact-item {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: var(--space-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.footer-social {
+  margin-top: var(--space-md);
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-light);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.footer-social-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-md);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}

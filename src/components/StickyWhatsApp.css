@@ -1,0 +1,33 @@
+.sticky-whatsapp-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--space-sm);
+  background: linear-gradient(to top, rgba(255,255,255,1) 30%, rgba(255,255,255,0));
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.sticky-whatsapp-btn {
+  pointer-events: auto;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .sticky-whatsapp-container {
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+  .sticky-whatsapp-btn {
+    width: auto;
+  }
+}
