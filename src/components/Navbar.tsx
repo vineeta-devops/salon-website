@@ -44,39 +44,41 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="navbar">
-      <Container>
-        <div className="navbar-container">
-          <a href="#" className="navbar-logo" onClick={closeMenu}>
-            {salonConfig.salonName}
-          </a>
-
-          <nav className="navbar-links" aria-label="Desktop Navigation">
-            {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="nav-link">
-                {link.name}
-              </a>
-            ))}
-          </nav>
-
-          <div className="navbar-actions">
-            <a href="#appointment" className="btn btn-primary">
-              Book Appointment
+    <>
+      <header className="navbar">
+        <Container>
+          <div className="navbar-container">
+            <a href="#" className="navbar-logo" onClick={closeMenu}>
+              {salonConfig.salonName}
             </a>
-          </div>
 
-          <button
-            className={`hamburger ${isOpen ? 'is-open' : ''}`}
-            onClick={toggleMenu}
-            aria-expanded={isOpen}
-            aria-label="Toggle navigation menu"
-          >
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-          </button>
-        </div>
-      </Container>
+            <nav className="navbar-links" aria-label="Desktop Navigation">
+              {navLinks.map((link) => (
+                <a key={link.name} href={link.href} className="nav-link">
+                  {link.name}
+                </a>
+              ))}
+            </nav>
+
+            <div className="navbar-actions">
+              <a href="#appointment" className="btn btn-primary">
+                Book Appointment
+              </a>
+            </div>
+
+            <button
+              className={`hamburger ${isOpen ? 'is-open' : ''}`}
+              onClick={toggleMenu}
+              aria-expanded={isOpen}
+              aria-label="Toggle navigation menu"
+            >
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+            </button>
+          </div>
+        </Container>
+      </header>
 
       {/* Mobile Menu */}
       <div 
@@ -104,6 +106,6 @@ export const Navbar = () => {
           </a>
         </div>
       </div>
-    </header>
+    </>
   );
 };

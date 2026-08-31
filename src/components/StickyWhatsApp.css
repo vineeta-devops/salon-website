@@ -1,33 +1,36 @@
-.sticky-whatsapp-container {
+.sticky-whatsapp-btn {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: var(--space-sm);
-  background: linear-gradient(to top, rgba(255,255,255,1) 30%, rgba(255,255,255,0));
-  z-index: 999;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  width: auto;
   display: flex;
+  align-items: center;
   justify-content: center;
-  pointer-events: none;
+  box-sizing: border-box;
+  gap: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  z-index: 999;
 }
 
-.sticky-whatsapp-btn {
-  pointer-events: auto;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-  width: 100%;
-  max-width: 400px;
+.sticky-label {
+  display: inline;
+  white-space: nowrap;
+}
+
+.sticky-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
-  .sticky-whatsapp-container {
-    bottom: 20px;
-    right: 20px;
-    left: auto;
-    width: auto;
-    background: none;
-    padding: 0;
-  }
   .sticky-whatsapp-btn {
-    width: auto;
+    left: auto;
+    right: 20px;
+    bottom: 20px;
+    padding: 0.8rem 1.8rem;
   }
 }
