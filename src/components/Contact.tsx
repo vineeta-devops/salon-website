@@ -30,12 +30,11 @@ export const Contact = () => {
                   {salonConfig.city}
                 </address>
                 <a 
-                  href={salonConfig.googleMapsUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="#" 
+                  onClick={(e) => e.preventDefault()}
                   className="contact-link"
                 >
-                  Get Directions →
+                  Directions (demo) →
                 </a>
               </div>
 
@@ -106,13 +105,15 @@ export const Contact = () => {
               {salonConfig.address}, {salonConfig.city}
             </p>
             <a 
-              href={salonConfig.googleMapsUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="#" 
+              onClick={(e) => e.preventDefault()}
               className="btn btn-outline"
             >
-              Open in Google Maps
+              Map Link (Demo)
             </a>
+            <p className="contact-map-demo-note">
+              In a real project, this would link to the business's Google Maps location.
+            </p>
           </div>
         </div>
       </Container>

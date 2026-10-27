@@ -32,6 +32,9 @@ export const Services = () => {
           <p className="services-description">
             Explore our professional salon services and enquire directly through WhatsApp to book your next session.
           </p>
+          <p className="services-demo-note">
+            Sample prices for demonstration.
+          </p>
         </div>
 
         <div className="category-filter-wrapper reveal-up delay-100">

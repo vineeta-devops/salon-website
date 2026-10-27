@@ -6,9 +6,23 @@ import './Navbar.css';
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const noticeRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+
+  // Measure demo notice bar height so sticky navbar and mobile menu adjust dynamically
+  useEffect(() => {
+    const updateNoticeHeight = () => {
+      if (noticeRef.current) {
+        const height = noticeRef.current.offsetHeight;
+        document.documentElement.style.setProperty('--demo-notice-height', `${height}px`);
+      }
+    };
+    updateNoticeHeight();
+    window.addEventListener('resize', updateNoticeHeight);
+    return () => window.removeEventListener('resize', updateNoticeHeight);
+  }, []);
 
   // Close menu on escape key
   useEffect(() => {
@@ -45,6 +59,12 @@ export const Navbar = () => {
 
   return (
     <>
+      <div className="demo-notice-bar" ref={noticeRef}>
+        <div className="demo-notice-content">
+          Demo project: fictional business created for portfolio purposes. All details are sample content.
+        </div>
+      </div>
+
       <header className="navbar">
         <Container>
           <div className="navbar-container">
@@ -61,8 +81,8 @@ export const Navbar = () => {
             </nav>
 
             <div className="navbar-actions">
-              <a href="#appointment" className="btn btn-primary">
-                Book Appointment
+              <a href="#appointment" className="btn btn-primary nav-appointment-btn">
+                Request Appointment
               </a>
             </div>
 
@@ -101,8 +121,8 @@ export const Navbar = () => {
         </nav>
         
         <div className="mobile-menu-cta" onClick={closeMenu}>
-          <a href="#appointment" className="btn btn-primary btn-full">
-            Book Appointment
+          <a href="#appointment" className="btn btn-primary btn-full nav-appointment-btn-mobile">
+            Request Appointment
           </a>
         </div>
       </div>

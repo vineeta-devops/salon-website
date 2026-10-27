@@ -16,6 +16,13 @@
   font-size: 1.1rem;
 }
 
+.services-demo-note {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin-top: var(--space-xs);
+  margin-bottom: 0;
+}
+
 /* Category Filter */
 .category-filter-wrapper {
   margin-bottom: var(--space-xl);

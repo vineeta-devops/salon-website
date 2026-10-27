@@ -3,11 +3,11 @@ export const salonConfig = {
   tagline: "Elevate Your Natural Beauty",
   description: "Experience premium beauty services in an elegant and relaxing environment. Our expert stylists are dedicated to bringing out your best.",
   whatsappNumber: "1234567890", // Add country code without '+', e.g. 1234567890
-  phoneNumber: "+1 234 567 890",
-  address: "123 Luxury Avenue, Suite 100",
-  city: "Beverly Hills, CA 90210",
+  phoneNumber: "+91 00000 00000 (sample number)",
+  address: "Sample address (demo)",
+  city: "Your City, India",
   openingHours: "Mon-Sat: 9am - 7pm | Sun: Closed",
-  googleMapsUrl: "https://maps.google.com/?q=Beverly+Hills",
+  googleMapsUrl: "#",
   instagramUrl: "https://instagram.com/velorabeauty",
   logo: "/logo.svg", // Placeholder for actual logo
   heroImage: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop", // Remote premium beauty image for development
@@ -53,10 +53,10 @@ export const salonConfig = {
     { id: 16, category: "Beauty Treatments", name: "Full Body Waxing", description: "Smooth and gentle hair removal with premium wax.", price: "Starting from ₹1,299", image: "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&q=80&w=800" }
   ],
   offers: [
-    { id: 1, title: "Signature Hair Care", description: "Haircut + Hair Spa", price: "Starting from ₹1,499", originalPrice: "₹1,999", badge: "Limited Time", validText: "Valid till end of month", image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800" },
-    { id: 2, title: "Glow & Relax", description: "Cleanup + Glow Facial", price: "Starting from ₹1,799", originalPrice: "₹2,499", badge: "Popular", validText: "Valid on weekdays", image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" },
-    { id: 3, title: "Bridal Beauty Package", description: "Bridal Makeup + Hair Styling", price: "Starting from ₹8,999", originalPrice: "₹12,000", badge: "Premium", validText: "Booking required 1 week prior", image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800" },
-    { id: 4, title: "Weekend Self-Care", description: "Manicure + Spa Treatment", price: "Starting from ₹2,199", originalPrice: "₹3,000", badge: "Weekend Special", validText: "Valid Saturday-Sunday", image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800" }
+    { id: 1, title: "Signature Hair Care", description: "Haircut + Hair Spa", price: "Starting from ₹1,499", badge: "SAMPLE OFFER", validText: "Sample offer (demo)", image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" },
+    { id: 2, title: "Glow & Relax", description: "Cleanup + Glow Facial", price: "Starting from ₹1,799", badge: "SAMPLE OFFER", validText: "Sample offer (demo)", image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" },
+    { id: 3, title: "Bridal Beauty Package", description: "Bridal Makeup + Hair Styling", price: "Starting from ₹8,999", badge: "SAMPLE OFFER", validText: "Sample offer (demo)", image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?q=80&w=800" },
+    { id: 4, title: "Weekend Self-Care", description: "Manicure + Spa Treatment", price: "Starting from ₹2,199", badge: "SAMPLE OFFER", validText: "Sample offer (demo)", image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800" }
   ],
   gallery: [
     { id: 1, category: "Salon Interior", title: "Premium Salon Atmosphere", image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800", alt: "Modern and elegant beauty salon interior with premium stations" },

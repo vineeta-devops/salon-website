@@ -16,6 +16,9 @@ export const Offers = () => {
           <p>
             Explore our carefully curated packages designed to give you the premium salon experience with exceptional value. Enquire directly on WhatsApp.
           </p>
+          <p className="offers-demo-note">
+            Sample offers for demonstration. Packages, prices and validity are fictional.
+          </p>
         </div>
 
         <div className="offers-grid">
@@ -33,9 +36,6 @@ export const Offers = () => {
                 
                 <div className="offer-pricing">
                   <span className="offer-price">{offer.price}</span>
-                  {offer.originalPrice && (
-                    <span className="offer-original-price">{offer.originalPrice}</span>
-                  )}
                 </div>
                 
                 {offer.validText && (

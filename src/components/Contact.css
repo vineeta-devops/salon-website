@@ -117,3 +117,12 @@
   margin-bottom: var(--space-md);
   max-width: 80%;
 }
+
+.contact-map-demo-note {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: 1rem;
+  margin-bottom: 0;
+  max-width: 80%;
+  text-align: center;
+}

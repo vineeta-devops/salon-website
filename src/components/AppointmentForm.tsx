@@ -39,7 +39,7 @@ export const AppointmentForm = () => {
     if (!formData.name.trim()) newErrors.name = 'Please enter your name.';
     
     // Basic phone validation for Indian 10 digits or +91 format
-    const phoneRegex = /^(\+91[\-\s]?)?[0-9]{10}$/;
+    const phoneRegex = /^(\+91[-\s]?)?[0-9]{10}$/;
     if (!formData.phone.trim()) {
       newErrors.phone = 'Please enter your WhatsApp/phone number.';
     } else if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
@@ -90,7 +90,7 @@ export const AppointmentForm = () => {
       <Container>
         <div className="appointment-layout">
           <div className="appointment-content reveal-up">
-            <span className="eyebrow">Book Your Visit</span>
+            <span className="eyebrow">Request a Visit</span>
             <h2 className="appointment-title">Ready for Your Next Look?</h2>
             <p className="appointment-description">
               Tell us what you're looking for and we'll help you find the right service and appointment time.
@@ -112,7 +112,7 @@ export const AppointmentForm = () => {
                 </svg>
                 <div className="trust-text">
                   <h4>Direct Confirmation</h4>
-                  <p>Appointments are confirmed directly by our salon team.</p>
+                  <p>Appointment requests are confirmed by our salon team on WhatsApp.</p>
                 </div>
               </div>
             </div>

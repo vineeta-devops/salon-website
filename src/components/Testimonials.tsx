@@ -24,7 +24,10 @@ export const Testimonials = () => {
         <div className="testimonials-header text-center reveal-up">
           <span className="eyebrow">Client Love</span>
           <h2>What Our Guests Say</h2>
-          <p>Read about the premium experiences and transformations from our valued clients.<br/><span style={{ fontSize: '0.85em', opacity: 0.7, fontStyle: 'italic' }}>* Sample client feedback for demonstration</span></p>
+          <p>Read about the premium experiences and transformations from our valued clients.</p>
+          <p className="testimonials-demo-note">
+            Sample feedback for demonstration. Names and reviews are fictional.
+          </p>
         </div>
 
         <div className="testimonials-scroll-container reveal-up delay-100">

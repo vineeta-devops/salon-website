@@ -8,6 +8,13 @@
   margin: 0 auto var(--space-xl);
 }
 
+.testimonials-demo-note {
+  font-size: 0.9rem;
+  color: var(--color-dark);
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
 .testimonials-scroll-container {
   display: flex;
   gap: var(--space-md);

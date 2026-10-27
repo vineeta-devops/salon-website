@@ -7,6 +7,13 @@
   margin: 0 auto var(--space-xl);
 }
 
+.offers-demo-note {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin-top: var(--space-xs);
+  margin-bottom: 0;
+}
+
 .offers-grid {
   display: grid;
   grid-template-columns: 1fr;

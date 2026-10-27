@@ -1,6 +1,24 @@
-.navbar {
+.demo-notice-bar {
   position: sticky;
   top: 0;
+  z-index: 1001;
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: 0.45rem 1rem;
+  text-align: center;
+}
+
+.demo-notice-content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar {
+  position: sticky;
+  top: var(--demo-notice-height, 34px);
   z-index: 1000;
   background-color: rgba(253, 251, 249, 0.95); /* matching --color-background with opacity */
   backdrop-filter: blur(8px);
@@ -67,6 +85,19 @@
   }
 }
 
+.nav-appointment-btn {
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.nav-appointment-btn-mobile {
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: flex;
@@ -108,10 +139,10 @@
 /* Mobile Menu overlay */
 .mobile-menu {
   position: fixed;
-  top: 80px; /* navbar height */
+  top: calc(80px + var(--demo-notice-height, 34px));
   left: 0;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 80px - var(--demo-notice-height, 34px));
   background-color: var(--color-background);
   padding: var(--space-lg) var(--space-md);
   display: flex;

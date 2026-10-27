@@ -39,7 +39,7 @@ export const Footer = () => {
               <a href="#gallery" className="footer-link">Gallery</a>
               <a href="#testimonials" className="footer-link">Testimonials</a>
               <a href="#contact" className="footer-link">Contact</a>
-              <a href="#appointment" className="footer-link">Book Appointment</a>
+              <a href="#appointment" className="footer-link">Request Appointment</a>
             </nav>
           </div>
 
@@ -60,13 +60,14 @@ export const Footer = () => {
             </div>
             <div className="footer-contact-item">
               <span aria-hidden="true">💬</span>
-              <span>{salonConfig.whatsappNumber}</span>
+              <span>{salonConfig.whatsappNumber} (sample number)</span>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} {salonConfig.salonName}. All rights reserved.</p>
+          <p className="footer-demo-note">Demo project · Fictional business</p>
         </div>
       </Container>
     </footer>

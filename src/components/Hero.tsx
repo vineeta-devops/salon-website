@@ -30,7 +30,7 @@ export const Hero = () => {
             
             <div className="hero-actions fade-in delay-300">
               <WhatsAppButton type="general" variant="primary" className="btn-lg">
-                Book an Appointment on WhatsApp
+                Request an Appointment on WhatsApp
               </WhatsAppButton>
               
               <Button variant="outline" className="btn-lg" onClick={scrollToServices}>
